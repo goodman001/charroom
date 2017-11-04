@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Chat</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="content">
+        <div id="room-list"></div>
+        <div id="chatarea">
+            <div class = "titlearea">
+                Chatroom: <span id="room"></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;my nickname：  <span id="nickName"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span id="onwer"></span>
+                
+            </div>
+            <div id="messages"></div>
+        </div>
+        
+        <div id="user-list"></div>
+        
+        
+        <div id="help">
+            <form id="send-form">
+                <input id="send-message" type="text"/>
+                <input id="send-button" type="button" value="发送"/>
+            </form>
+            命令：
+            Chat room name: 
+            <input id="send-name" type="text" />
+            <button id="send-room-nopwd">Create a Room without password</button>
+            <br>
+            Password: 
+            <input id="send-pwd" type="password" />
+            <button id="send-room-pwd">Create a Room with password</button>
+            <ul>
+                <li>修改昵称：<code>/nick [username]</code></li>
+                <li>加入/创建房间：<code>/join [room name]</code></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="/js/chat_ui.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>

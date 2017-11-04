@@ -1,0 +1,56 @@
+#content{
+    width:100%;
+    margin:auto;
+}
+
+#room-list{
+    float:left;
+    width:20%;
+    height:300px;
+    overflow:auto;
+}
+
+#room-list div{
+    border-bottom: 1px solid #eee;
+}
+
+#room-list div:hover{
+    background-color:#ddd;
+}
+#chatarea{
+	float:left;
+    width:50%;
+}
+#messages{
+    width:95%;
+    height:300px;
+    overflow: auto;
+    background-color: #eee;
+    margin-bottom: 1em;
+    margin-right: 1%;
+}
+#user-list{
+    float:left;
+    width:20%;
+    height:300px;
+    overflow:auto;
+}
+#send-form{
+	width:100%;
+}
+#send-message{
+	width:80%;
+}
+
+
+#help{
+	width:50%;
+	margin-left:20%;
+    font:10px;
+}
+.titlearea{
+	width:100%;
+}
+.active{
+	background-color:red;
+}
